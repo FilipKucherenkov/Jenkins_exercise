@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mynodeapp:
+    image: app1:v1
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
+  mynodeapp2:
+    image: app1:v1
+    environment:
+      - PORT=3001
+    ports:
+      - "3001:3001"
